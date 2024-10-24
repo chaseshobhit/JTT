@@ -614,32 +614,6 @@
                 });
 
 
-
-                // fetch('http://localhost:5000/submit',{
-                //     method: 'POST',
-                //     headers:{
-                //         'Content-Type': 'application/json'
-                //     },
-                //     body: JSON.stringify({name: name, number: number})
-                // })
-
-                // .then(response=>{
-                //     if(!response.ok){
-                //         throw new Error('Network response was not ok');
-                //     }
-                //     return response.json();
-                // })
-
-                // .then(result=>{
-                //     console.log('Success:',result);
-                //     window.location.href='confirmation.html';
-                // })
-
-                // .catch(error=>{
-                //     consle.log("There was  an error with the fetch opreation: ",error);
-                // });
-
-
             // Make a POST request to the backend server
             fetch('http://localhost:5000/submit', {
                 method: 'POST',
@@ -651,15 +625,9 @@
                 .then(response => response.json())
                 .then(data => {
                     console.log(data);
-                    if (data.message === 'Data received successfully') {
-                        
-                        // Redirect to confirmation page
-                        window.location.href = 'confirmation.html';
-                    } else {
-                        console.log("0");
+                    // Redirect to confirmation page
+                    window.location.href = 'confirmation.html';
 
-                        alert('Error: ' + data.message);
-                    }
                 })
                 .catch(error => {
                     console.error('Error:', error);
