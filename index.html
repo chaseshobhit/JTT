@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon"
+    href="https://img.freepik.com/premium-vector/fitness-center-logo-sport-fitness-logo-design-gym-logo-icon-design-vector-stock_279597-366.jpg?w=2000"
+    type="image/icon type">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <link rel="stylesheet" href="css/proj.css">
+    <title>JJT FITNESS</title>
+    <style>
+        body {
+            background-color: #eeee;
+            overflow-x: hidden;
+        }
+
+
+        /*background  satarts here*/
+
+
+
+
+
+        .animated-title {
+            animation-duration: 1s;
+            animation-delay: 1s;
+            font-size: 100px;
+        }
+
+        .bg-curved {
+            background-color: white;
+            /* White background color */
+            color: black;
+            /* Black text color */
+            padding: 5px 8px;
+            /* Reduced padding to make the box smaller */
+            border-radius: 15px;
+            /* Curved edges */
+            display: inline-block;
+            /* Ensures the box size is tightly wrapped around the text */
+            max-width: max-content;
+            /* Makes the box as wide as the content */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            /* Light shadow for a more attractive look */
+        }
+
+
+
+        #bg-img {
+            background: url("https://static.toiimg.com/photo/96125662.cms");
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 500px;
+            background-position: center;
+            background-size: cover;
+            opacity: .8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #home-page {
+            color: #ffffff;
+        }
+
+        .slogan {
+            font-size: 24px;
+            color: #000000;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            display: inline-block;
+            animation-duration: 1s;
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated.fadeInUp {
+            animation-name: fadeInUp;
+        }
+
+
+
+        /*background ends here*/
+
+
+        /*Navbar starts here*/
+
+        #navbarNav>ul li a {
+            padding: 0px 25px;
+            /*navbar ul li a goes here*/
+            margin: 8px 10px;
+            color: #e4f1fe;
+        }
+
+        #navbarNav>ul li a:hover {
+            color: #def2;
+            /*navbar hover effects here*/
+        }
+
+        .navbar-brand {
+            padding: 0px 125px;
+        }
+
+        .navbar {
+            text-align: center;
+        }
+
+
+        /*Navbar ends here*/
+
+
+        /*About starts here */
+
+        #About,
+        h2 {
+            text-align: center;
+            /* About headings */
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        #About .lead {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 10px;
+            /* About lead paraphares */
+            margin-top: 8px;
+            font-family: 'popines';
+            display: inline-block;
+            border-left: 2px solid red;
+        }
+
+        .featurette-image {
+            width: 80%;
+            height: 200px;
+            /* About Image */
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        .featurette-image:hover {
+            opacity: 0.75;
+            transition: .3s ease-in-out;
+            /* About Image hover */
+            transition: .3s ease-in-out;
+        }
+
+        .text-center {
+            margin-top: 15px;
+            color: rgb(0, 0, 0);
+        }
+
+        .row {
+            margin-top: 50px;
+            /* About row goes here */
+        }
+
+        .lead {
+            text-align: center;
+            /* About paragraphes */
+            line-height: 1.2;
+        }
+
+
+        /*About ends here */
+
+
+        /*Our Team Starts here*/
+
+        #Team .col-md-4 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #Team h2 {
+            font-weight: normal;
+            margin-top: 10px;
+        }
+
+        #Team.col-md-4 p {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        #Team img {
+            border-radius: 50%;
+        }
+
+
+        /*our Team Ends here*/
+
+
+        /*footer starts here*/
+
+        .footer-copyright {
+            margin-top: 05px;
+            color: #ffff;
+            margin-right: 10px;
+        }
+
+        #footer {
+            margin-top: 30px;
+            background-color: #333;
+            padding: 8px 12px;
+        }
+
+
+        /*footer ends here*/
+
+
+        /*content from satarts here*/
+
+        #from {
+            margin-top: 40px;
+        }
+
+        .form-group {
+            position: relative;
+            width: 300px;
+            margin: 0 auto;
+            /*content from-groups*/
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            width: 150px;
+            /*content from btn here*/
+            padding: 0 30px;
+            margin-left: 60px;
+            border-radius: 20px;
+            transition: 1s;
+        }
+
+        .btn:hover {
+            /*content from btn hover here*/
+            background: #e33;
+            transform: rotate(360deg);
+        }
+
+        #from {
+            position: relative;
+            width: 100%;
+            background: url("../img/pexels-photo-592753.jpeg");
+            /*content from background image here*/
+            background-position: center;
+            background-size: cover;
+            height: 300px;
+            opacity: 0.8
+        }
+
+
+        /*content from satarts here* /
+
+
+/*medai query goes here*/
+
+
+        /*meiad query for media screen starts here */
+
+        @media (max-width:992px) {
+            #About .lead {
+                text-align: center;
+                font-size: 16px;
+                margin-bottom: 10px;
+                font-family: 'popines';
+                margin-top: 10px;
+            }
+
+            .featurette-image {
+                width: 90%;
+                height: 200px;
+                /* About Image */
+                margin-top: 15px;
+                margin-bottom: 8px;
+            }
+        }
+
+
+        /*meiad query for media screen ends here/
+
+
+/meiad query for Tablet screen starts here*/
+
+        @media (max-width:768px) {
+
+            #About,
+            h2 {
+                text-align: center;
+                line-height: 1;
+                font-size: 22px;
+                margin-top: 15px;
+                margin-bottom: 8px;
+            }
+
+            #About .lead {
+                text-align: center;
+                font-size: 16px;
+                margin-bottom: 8px;
+                font-family: 'popines';
+                margin-top: 8px;
+            }
+        }
+
+
+        /*meiad query for Tablet screen ends here*/
+
+
+        /*meiad query for Moblie screen starts here*/
+
+        @media (max-width: 500px) {
+
+            #About,
+            h2 {
+                text-align: center;
+                line-height: 1;
+                font-size: 21px;
+                margin-top: 13px;
+                margin-bottom: 9px;
+            }
+
+            #About .lead {
+                text-align: center;
+                font-size: 15px;
+                margin-bottom: 8px;
+                font-family: 'popines';
+            }
+
+            .form-group {
+                position: relative;
+                width: 250px;
+                margin: 0 auto;
+                padding-top: 10px;
+                margin-top: 10px;
+            }
+
+            #from {
+                position: relative;
+                width: 100%;
+                background: url("../img/pexels-photo-592753.jpeg");
+                background-position: center;
+                background-size: cover;
+                height: 250px;
+            }
+
+            .navbar-brand {
+                padding: 0px 20px;
+            }
+
+            #navbarNav>ul li a {
+                padding: -10px 12px;
+                margin: 6px 7px;
+                color: #e4f1fe;
+                font-family: 'popines';
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img
+                src="https://img.freepik.com/premium-vector/fitness-center-logo-sport-fitness-logo-design-gym-logo-icon-design-vector-stock_279597-366.jpg?w=2000"
+                width="70" height="50" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar">Menu</span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#About">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="store.html">Store</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Team">Team</a>
+                </li>
+                <li class="nav-item active  ">
+                    <a class="nav-link " href="#from">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- nav end here -->
+
+
+
+    <!-- img home page starts -->
+
+    <div id="bg-img">
+        <div class="container">
+            <div id="home-page">
+                <h1 class="text-center d-flex justify-content-center animated bounceInDown animated-title">
+                    <span class="bg-curved">JTT FITNESS</span>
+                </h1>
+                <p class="text-center slogan animated fadeInUp">Just Train Today !</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- end here -->
+
+
+
+    <!-- About Me -->
+
+    <section id="About">
+        <div class="container">
+            <h2 class="text-center">About Gym</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Best Quality Traning. <span class="text-muted">Enjoy the
+                            process.</span></h2>
+                    <p class="lead">Cardio, short for cardiovascular, is a workout for your cardiovascular system which
+                        includes your heart and lungs. It is a key to living a longer and healthier life. Just a few of
+                        the benefits of cardio exercise: Lowers the risk of heart disease, stroke, diabetes, and some
+                        types of cancer..</p>
+                </div>
+                <div class="col-md-5">
+                    <img class=" featurette-image img-responsive"
+                        src="https://www.fitness-world.in/wp-content/uploads/2022/01/5-Reasons-Why-Your-Residential-Building-Needs-a-Professional-Gym-Banner-1200x620.jpg"
+                        width="500" height="500" alt="     Generic placeholder image">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-5">
+                    <img class=" featurette-image img-responsive "
+                        src="https://imgmedia.lbb.in/media/2022/02/6215e931cddd8232a38e41ce_1645603121571.jpg "
+                        width="500" height="500" alt="Generic placeholder image fu">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">All types of Equipment. <span class="text-muted">Enjoy the
+                            Space</span></h2>
+                    <p class="lead">Exercise equipment is any apparatus or device used during physical activity to
+                        enhance the strength or conditioning effects of that exercise by providing either fixed or
+                        adjustable amounts of resistance, or to otherwise enhance the experience or outcome of an
+                        exercise routine..</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Treadmills. <span class="text-muted">Enjoy the Availability.</span>
+                    </h2>
+                    <p class="lead">A treadmill is a piece of exercise equipment that has a belt that loops around,
+                        driven by a motor. The continuous loop allows a person to walk or run on the treadmill in place.
+                        Treadmills are often used as part of aerobic exercise or as a warmup before doing strength
+                        training exercises..</p>
+                </div>
+                <div class="col-md-5">
+                    <img class=" featurette-image img-responsive center-block"
+                        src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        width="500" height="500" alt="Generic placeholder image fu">
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!--............ About end here......... -->
+    <hr>
+    <!--........... team  start here ........-->
+    <div class="container" id="Team">
+        <h3 class="text-center">Our Amazing Team !</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-circle"
+                    src="https://img.freepik.com/premium-photo/bodybuilder-posing-fitness-muscled-man-dark-scene_136403-4206.jpg?w=2000"
+                    alt="Generic placeholder image" width="140" height="140">
+                <h2>Shobhit Tomar</h2>
+                <p class="text-muted"> Gym Founder</p>
+            </div>
+            <div class="col-md-4">
+                <img class="img-circle"
+                    src="https://cdn.shopify.com/s/files/1/1497/9682/articles/Main_Image_3.jpg?v=1663944771"
+                    alt="Generic placeholder image" width="140" height="140">
+                <h2>Jatin Tyagi</h2>
+                <p class="text-muted"> Gym Traniner</p>
+            </div>
+            <div class="col-md-4">
+                <img class="img-circle"
+                    src="https://cdn.shopify.com/s/files/1/1633/7705/articles/natural_bodybuilding_2000x.jpg?v=1664546008"
+                    alt="Generic placeholder image" width="140" height="140">
+                <h2>Aditya Jain</h2>
+                <p class="text-muted">Gym Manager</p>
+            </div>
+        </div>
+    </div>
+    <!--................... team end here.............................. -->
+
+    <!--  ...................  Content US starts ......................-->
+    <section id="from">
+        <div class="container">
+            <h2 class="text-center">Contact US</h2>
+            <div class="container-fluid">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Phone Number*" id="Phone">
+                    <p id="phone-error" class="error"></p>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your name*" id="Your">
+                    <p id="name-error" class="error"></p>
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-success btn-md" onclick="validateAndRedirect()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  ... .....  ............. Content  end  ................................ -->
+    <!--......... ..............................footer start ....................-->
+
+    <section id="footer">
+        <div class="container">
+            <div class="footer-copyright text-center">© 2023 Copyright
+                <span> JJT</span>
+            </div>
+        </div>
+    </section>
+    <!--......... ..............................footer end ...................................-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/techscroll.js"></script>
+
+    <script>
+        $(function () {
+            // Smooth Scrolling
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+
+        function validateAndRedirect() {
+            console.log("Run");
+            var phone = document.getElementById('Phone').value.trim();
+            var name = document.getElementById('Your').value.trim();
+            var phoneError = document.getElementById('phone-error');
+            var nameError = document.getElementById('name-error');
+
+            phoneError.textContent = '';
+            nameError.textContent = '';
+
+            if (phone === '') {
+                phoneError.textContent = 'Phone number is required.';
+                return;
+            }
+            if (name === '') {
+                nameError.textContent = 'Name is required.';
+                return;
+            }
+
+
+            fetch('http://localhost:5000/', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.text(); // Convert response stream to text
+                })
+                .then(data => {
+                    console.log('Data received:', data);
+                })
+                .catch(error => {
+                    console.log("there was the problem with the fetch operation:", error)
+                });
+
+
+
+                // fetch('http://localhost:5000/submit',{
+                //     method: 'POST',
+                //     headers:{
+                //         'Content-Type': 'application/json'
+                //     },
+                //     body: JSON.stringify({name: name, number: number})
+                // })
+
+                // .then(response=>{
+                //     if(!response.ok){
+                //         throw new Error('Network response was not ok');
+                //     }
+                //     return response.json();
+                // })
+
+                // .then(result=>{
+                //     console.log('Success:',result);
+                //     window.location.href='confirmation.html';
+                // })
+
+                // .catch(error=>{
+                //     consle.log("There was  an error with the fetch opreation: ",error);
+                // });
+
+
+            // Make a POST request to the backend server
+            fetch('http://localhost:5000/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ phone: phone, name: name })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    if (data.message === 'Data received successfully') {
+                        
+                        // Redirect to confirmation page
+                        window.location.href = 'confirmation.html';
+                    } else {
+                        console.log("0");
+
+                        alert('Error: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+
+    </script>
+</body>
+
+</html>
