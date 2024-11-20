@@ -4,464 +4,214 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <title>JTT Store</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
   <script src="https://kit.fontawesome.com/ad0c4e912f.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet" />
-  <link href="css/styles.css" rel="stylesheet" type="text/css" />
-  <title>JTT Store</title>
-  <link rel="stylesheet" href="store_style.css">
+  <style>
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    .hero {
+      background: linear-gradient(90deg, #dc3545 0%, #ff6b6b 100%);
+    }
+
+    .card img {
+      object-fit: cover;
+      height: 150px;
+    }
+
+    .thank-you-msg {
+      display: none;
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      background-color: #ffffff;
+      padding: 20px;
+      border: 2px solid #dc3545;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .thank-you-msg h3 {
+      color: #dc3545;
+    }
+  </style>
 </head>
-<class="w-100">
-  <header class="bg-dark w-100">
-    <nav class="nav-bar ai-c jc-sb py-1 max-w-80 w-90">
-      <div class="nav--left ai-c">
-        <div class="nav__brand">
-          <div class="nav_brand_logo mr-2">
-            <img class="nav_brandlogo_img"
-              src="https://img.freepik.com/premium-vector/fitness-center-logo-sport-fitness-logo-design-gym-logo-icon-design-vector-stock_279597-366.jpg?w=2000"
-              alt="waves-icon" />
-          </div>
-          <div class="nav_brand_name">
-            <a class="brand-name--sm-w"
-              href="https://img.freepik.com/premium-vector/fitness-center-logo-sport-fitness-logo-design-gym-logo-icon-design-vector-stock_279597-366.jpg?w=2000">JTT</a>
-          </div>
-        </div>
 
-        <div class="nav__menu--short px-3 py-1 ai-c">
-          <div>
-            <a
-              href="https://img.freepik.com/premium-vector/fitness-center-logo-sport-fitness-logo-design-gym-logo-icon-design-vector-stock_279597-366.jpg?w=2000"><i
-                class="fas fa-bars"></i></a>
-          </div>
-        </div>
-
-        <div class="nav__menu ai-c tupper">
-          <a class="nav_menu_item"
-            href="https://img.freepik.com/premium-vector/fitness-center-logo-sport-fitness-logo-design-gym-logo-icon-design-vector-stock_279597-366.jpg?w=2000">
-            <div class="nav_menu_item co-r ai-c">
-              <div class="nav_menu_item-icon mr-2">
-                <i class="fas fa-home"></i>
-              </div>
-              <div class="nav__menu_item-text">home</div>
-            </div>
-          </a>
-
-          <a class="nav_menu_item" href="#">
-            <div class="nav_menu_item co-l ai-c">
-              <div class="nav_menu_item-icon mr-2">
-                <i class="fas fa-record-vinyl"></i>
-              </div>
-              <div class="nav__menu_item-text">collection</div>
-            </div>
-          </a>
-
-          <a class="nav_menu_item" href="#">
-            <div class="nav_menu_item co-l ai-c">
-              <div class="nav_menu_item-icon mr-2">
-                <i class="fas fa-shopping-cart"></i>
-              </div>
-              <div class="nav__menu_item-text">shopping</div>
-            </div>
-          </a>
-        </div>
-
-        <button type="button" class="nav__button btn-red tupper">post</button>
+<body>
+  <!-- Header -->
+  <header class="bg-dark text-white">
+    <nav class="container d-flex justify-content-between align-items-center py-3">
+      <div class="d-flex align-items-center">
+        <img src="https://img.freepik.com/premium-vector/fitness-center-logo-sport-fitness-logo-design-gym-logo-icon-design-vector-stock_279597-366.jpg?w=2000"
+          alt="JTT Logo" class="logo mr-2" />
+        <h1 class="m-0">JTT</h1>
       </div>
-      <div class="profile-icon d-none d-md-flex d-lg-none">
-        <i class="fas fa-user"></i>
-      </div>
-      <div class="nav--right ai-c d-none d-lg-flex h-100">
-        <div class="messages mr-4">
-          <a href="#"><i class="fas fa-envelope co-l"></i></a>
-        </div>
-        <div class="profile h-100 ai-c">
-          <div class="profile__name co-w mr-2 f-gb">JTT</div>
-          <div class="profile__img h-100 ai-c">
-            <img class="h-100 round"
-              src="https://img.freepik.com/premium-vector/fitness-center-logo-sport-fitness-logo-design-gym-logo-icon-design-vector-stock_279597-366.jpg?w=2000"
-              alt="face" />
-          </div>
-        </div>
-      </div>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Collection</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Shopping</a></li>
+      </ul>
+      <button class="btn btn-danger">Post</button>
     </nav>
   </header>
-  <header class="upper-page container-fluid bg-red py-3">
-    <img class="watermark"
-      src="https://media.istockphoto.com/id/1322158059/photo/dumbbell-water-bottle-towel-on-the-bench-in-the-gym.jpg?b=1&s=612x612&w=0&k=20&c=b13H5TTS1fK3L22PonClTd5L4B6_Ol4cucmOQOgeuWQ="
-      alt="wave-big" />
-    <div class="z-2 container max-w-80 w-90">
-      <div class="container flex-col">
-        <div class="brand-name--lg-w-page w-mc">JTT Store</div>
-        <h1 class="co-w f-hl w-mc">
-          Your marketplace for buying the Fitness Products from JTT on reasonable price.
-        </h1>
-      </div>
-      <div class="search container-fluid ai-c jc-sb w-100">
-        <div class="search-top h-search ai-c">
-          <div class="search__dropdown bg-white h-100 w-20 bord-r-red ai-c pl-1 pr-3 d-none d-md-flex">
-            <div class="search__dropdown-icon co-dt m-2">
-              <i class="fas fa-caret-down"></i>
-            </div>
-            <div class="search__dropdown-text co-dt f-gl">Supplements</div>
-          </div>
-          <div class="search__question bg-white h-100 bord-r-red co-l ai-c f-gl pl-2">
-            What do you search for?
-          </div>
-          <input type="text" placeholder="Search" class="search__input h-100 co-l" />
-        </div>
-        <div class="search-btn-div h-100">
-          <button type="button" class="search__button btn-dark w-100">
-            Search
-          </button>
-        </div>
-      </div>
+
+  <!-- Hero Section -->
+  <section class="hero text-white text-center py-5">
+    <div class="container">
+      <h2 class="display-4">Welcome to JTT Store</h2>
+      <p class="lead">Your marketplace for buying the best fitness products at reasonable prices.</p>
     </div>
-  </header>
-  <main class="page-flex bg-lighter jc-c px-5">
-    <aside class="aside-flex py-3 d-none d-md-block">
-      <div class="aside__header ai-c">
-        <label class="container ai-c">
-          <input type="checkbox" />
-          <span class="ml-2 co-dt">Clothing</span>
-        </label>
-        <label class="container ai-c">
-          <input type="checkbox" />
-          <span class="ml-2 co-dt">Gymnasium</span>
-        </label>
-      </div>
-      <div class="aside__block py-2">
-        <div class="aside_block_title ml-3 mb-3 pb-1 bord-b f-gb co-dt">
-          Type
-        </div>
-        <div class="aside_block_content">
-          <label class="container ai-c">
-            <input type="checkbox" />
-            <span class="ml-2 co-dt">T-Shrits</span>
-          </label>
-          <label class="container ai-c">
-            <input type="checkbox" />
-            <span class="ml-2 co-dt">Supplements</span>
-          </label>
-          <label class="container ai-c">
-            <input type="checkbox" />
-            <span class="ml-2 co-dt">Equipments</span>
-          </label>
-        </div>
-      </div>
-      <div class="aside__block py-2">
-        <div class="aside_block_title ml-3 mb-3 pb-1 bord-b f-gb co-dt">
-          Wood
-        </div>
-        <div class="aside_block_content">
-          <label class="container ai-c">
-            <input type="checkbox" />
-            <span class="ml-2 co-dt">Under Shirts</span>
-          </label>
-          <label class="container ai-c">
-            <input type="checkbox" />
-            <span class="ml-2 co-dt">Shakers</span>
-          </label>
-          <label class="container ai-c">
-            <input type="checkbox" />
-            <span class="ml-2 co-dt">Protiens</span>
-          </label>
-        </div>
-      </div>
-      <div class="aside__block py-2">
-        <div class="aside_block_title ml-3 mb-3 pb-1 bord-b f-gb co-dt">
-          Price Range
-        </div>
-        <div class="aside_block_content">
-          <label class="container ai-c">
-            <input type="checkbox" />
-            <span class="ml-2 co-dt">100$ - 500$</span>
-          </label>
-          <label class="container ai-c">
-            <input type="checkbox" />
-            <span class="ml-2 co-dt">501$ - 1000$</span>
-          </label>
-          <label class="container ai-c d-none d-md-block">
-            <input type="checkbox" />
-            <span class="ml-2 co-dt">1001$ - 1500$</span>
-          </label>
-          <label class="container ai-c d-none d-md-block">
-            <input type="checkbox" />
-            <span class="ml-2 co-dt">1501$ - 2000$</span>
-          </label>
-          <label class="container ai-c d-none d-md-block">
-            <input type="checkbox" />
-            <span class="ml-2 co-dt">2001$ - 2500$</span>
-          </label>
-        </div>
-      </div>
-    </aside>
-    <div>
-      <section class="results bg-lighter bord-x">
-        <div class="results__header">
-          <p class="results__header-p co-dt bord-b py-3 pl-3 m-0">
-            1020 Results for <b>"Search"</b> All
-            Categories <b>Supplements.</b>
-          </p>
-        </div>
-        <div class="results__block bord-b mb-2">
-          <div class="container w-100 ai-c h-100 px-0">
-            <div class="results__main flex-col w-100 h-100 px-3">
-              <div class="results__main_content jc-sb">
-                <div class="results__main_content-img"></div>
-                <div class="results__main_content-info py-3 pl-3">
-                  <div class="jc-sb">
-                    <h5 class="co-dt f-hm mb-0 ai-c">
-                      Protiens
-                    </h5>
-                    <div class="plus--page co-l ai-c jc-c">+</div>
-                  </div>
-                  <p class="co-r f-gb mx-0">New</p>
-                  <p class="f-hl co-d">
-                    Protein supplementation also promotes greater gains in lean body mass and muscle strength for
-                    trained individuals as the intensity, frequency, and duration of strength training increases. It
-                    increases the muscles' strength and size, during prolonged strength training in healthy adults.
-                  </p>
-                  <p class="co-d">
-                    <b>By:</b> <span class="co-l f-hl">JTT</span>
-                  </p>
-                  <p class="mb-0 co-d">
-                    <b>Location:</b>
-                    <span class="co-l f-hl">Delhi</span>
-                  </p>
-                  <div class="results__main_content-info-bottom ai-c mt-2 jc-sb">
-                    <p class="co-l f-hm">09 May, 2023</p>
-                    <div>
-                      <button type="button" class="temp-btn btn-red">
-                        Give a Call
-                      </button>
-                      <button type="button" class="btn-red">
-                        $450
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  </section>
 
-        <div class="results__block bord-y mb-2">
-          <div class="container w-100 ai-c h-100 px-0">
-            <div class="results__main flex-col w-100 h-100 px-3">
-              <div class="results__main_content jc-sb">
-                <div class="results__main_content-img"></div>
-                <div class="results__main_content-info w-55 py-3 pl-3">
-                  <div class="jc-sb">
-                    <h5 class="co-dt f-hm mb-0 ai-c">
-                      T-Shirts
-                    </h5>
-                    <div class="plus--page co-l ai-c jc-c">+</div>
-                  </div>
-                  <p class="co-r f-gb mx-0">New</p>
-                  <p class="f-hl co-d">
-                    We will provide you a best quality t-shirts for the exercise which gives you the best experience
-                    during the workout and also the design of the t-shirt are very good as you can check on our the
-                    website.
-                  </p>
-                  <p class="co-d">
-                    <b>By:</b> <span class="co-l f-hl">JTT</span>
-                  </p>
-                  <p class="mb-0 co-d">
-                    <b>Location:</b>
-                    <span class="co-l f-hl">Delhi</span>
-                  </p>
-                  <div class="results__main_content-info-bottom ai-c mt-2 jc-sb">
-                    <p class="co-l f-hm">09 May, 2023</p>
-                    <div>
-                      <button type="button" class="temp-btn btn-red">
-                        Give a Call
-                      </button>
-                      <button type="button" class="btn-red">
-                        $450
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- Main Content -->
+  <main class="container py-5">
+    <div class="row">
+      <!-- Sidebar -->
+      <aside class="col-md-3">
+        <h4>Categories</h4>
+        <ul class="list-unstyled">
+          <li><input type="checkbox" id="filterClothing" value="Clothing" /> <label for="filterClothing">Clothing</label></li>
+          <li><input type="checkbox" id="filterEquipment" value="Equipment" /> <label for="filterEquipment">Equipment</label></li>
+          <li><input type="checkbox" id="filterSupplements" value="Supplements" /> <label for="filterSupplements">Supplements</label></li>
+        </ul>
+        <h4>Price Range</h4>
+        <ul class="list-unstyled">
+          <li><input type="checkbox" id="price1" value="1" /> <label for="price1">₹100 - ₹500</label></li>
+          <li><input type="checkbox" id="price2" value="2" /> <label for="price2">₹501 - ₹1000</label></li>
+          <li><input type="checkbox" id="price3" value="3" /> <label for="price3">₹1001 - ₹50000</label></li>
+        </ul>
+      </aside>
 
-        <div class="results__block bord-y mb-2">
-          <div class="container w-100 ai-c h-100 px-0">
-            <div class="results__main flex-col w-100 h-100 px-3">
-              <div class="results__main_content jc-sb">
-                <div class="results__main_content-img"></div>
-                <div class="results__main_content-info w-55 py-3 pl-3">
-                  <div class="jc-sb">
-                    <h5 class="co-dt f-hm mb-0 ai-c">
-                      Other Supplements.
-                    </h5>
-                    <div class="plus--page co-l ai-c jc-c">+</div>
-                  </div>
-                  <p class="co-r f-gb mx-0">New</p>
-                  <p class="f-hl co-d">
-
-                    Food supplements | EFSA
-                    Food supplements are intended to correct nutritional deficiencies, maintain an adequate intake of
-                    certain nutrients, or to support specific physiological functions. They are not medicinal products
-                    and as such cannot exert a pharmacological, immunological or metabolic action.
-                  </p>
-                  <p class="co-d">
-                    <b>By:</b> <span class="co-l f-hl">JTT</span>
-                  </p>
-                  <p class="mb-0 co-d">
-                    <b>Location:</b>
-                    <span class="co-l f-hl">Delhi</span>
-                  </p>.
-                  <div class="results__main_content-info-bottom ai-c mt-2 jc-sb">
-                    <p class="co-l f-hm">09 May, 2023</p>
-                    <div>
-                      <button type="button" class="temp-btn btn-red">
-                        Give a Call
-                      </button>
-                      <button type="button" class="btn-red">
-                        $450
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="results__block bord-y mb-2">
-          <div class="container w-100 ai-c h-100 px-0">
-            <div class="results__main flex-col w-100 h-100 px-3">
-              <div class="results__main_content jc-sb">
-                <div class="results__main_content-img"></div>
-                <div class="results__main_content-info w-55 py-3 pl-3">
-                  <div class="jc-sb">
-                    <h5 class="co-dt f-hm mb-0 ai-c">
-                      Equipments.
-                    </h5>
-                    <div class="plus--page co-l ai-c jc-c">+</div>
-                  </div>
-                  <p class="co-r f-gb mx-0">New</p>
-                  <p class="f-hl co-d">
-
-                    We will provide very good quality equipments at very reasonable price,
-                    Exercise equipment is any apparatus or device used during physical activity to enhance the strength
-                    or conditioning effects of that exercise by providing either fixed or adjustable amounts of
-                    resistance, or to otherwise enhance the experience or outcome of an exercise routine.
-                  </p>
-                  <p class="co-d">
-                    <b>By:</b> <span class="co-l f-hl">JTT</span>
-                  </p>
-                  <p class="mb-0 co-d">
-                    <b>Location:</b>
-                    <span class="co-l f-hl">Delhi</span>
-                  </p>
-                  <div class="results__main_content-info-bottom ai-c mt-2 jc-sb">
-                    <p class="co-l f-hm">09 May, 2023</p>
-                    <div>
-                      <button type="button" class="temp-btn btn-red">
-                        Give a Call
-                      </button>
-                      <button type="button" class="btn-red">
-                        $450
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- Products Section -->
+      <section class="col-md-9">
+        <h4>Products</h4>
+        <div id="productList" class="row"></div>
       </section>
-      <div class="page-selector"></div>
     </div>
   </main>
-  <footer>
-    <div class="footer__main h-80 w-90 center jc-sb pt-4">
-      <div class="footer_main_about px-3">
-        <div class="footer_mainabout_logo">
-          <div class="ai-c jc-c mb-3">
-            <div class="footer__logo mr-3">
-              <img class="footer_logo_img"
-                src="https://img.freepik.com/premium-vector/fitness-center-logo-sport-fitness-logo-design-gym-logo-icon-design-vector-stock_279597-366.jpg?w=2000"
-                alt="waves-icon" />
-            </div>
-            <div class="footer_logo_name brand-name--sm-w">JTT</div>
-          </div>
-        </div>
-        <p class="co-l f-hl">
-          This is the all in one website which provide you all guidance about the gym and the transformation and the
-          store will give you all gym related stuff that you want for the exercise and also provide the equipments for
-          those who work out at their home.
-      </div>
-      <div class="footer_main_categories px-3">
-        <div class="footer__main--title">CATEGORIES</div>
-        <div class="jc-sb">
-          <ul class="links">
-            <li><a href="#">Supplements</a></li>
-            <li><a href="#">T-shirts</a></li>
-            <li><a href="#">Bags</a></li>
-            <li><a href="#">Shakers</a></li>
-            <li><a href="#">Under-shirts</a></li>
-            <li><a href="#">Equipments</a></li>
-          </ul>
-          <ul class="links">
-            <li><a href="#">Supplements</a></li>
-            <li><a href="#">T-shirts</a></li>
-            <li><a href="#">Bags</a></li>
-            <li><a href="#">Shakers</a></li>
-            <li><a href="#">Under-shirts</a></li>
-            <li><a href="#">Equipments</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer_main_navigation px-3">
-        <div class="footer__main--title">NAVIGATION</div>
-        <ul class="links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sign In</a></li>
-          <li><a href="#">Sign Up</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Help</a></li>
-        </ul>
-      </div>
-      <div class="footer_main_options px-3 flex-col jc-c">
-        <div class="footer_main_options--item jc-sb ai-c">
-          <span class="co-r f-gb w-50">COUNTRY</span>
-          <button type="button" class="btn-transparent w-50">India</button>
-        </div>
-        <div class="footer_main_options--item jc-sb ai-c my-2">
-          <span class="co-r f-gb w-50">LANGUAGE</span>
-          <button type="button" class="btn-transparent w-50">
-            English
-          </button>
-        </div>
-        <div class="footer_main_options--item jc-sb ai-c">
-          <span class="co-r f-gb w-50">CURRENCY</span>
-          <button type="button" class="btn-transparent w-50">Rupees</button>
-        </div>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <div class="footer_bottom_copyright co-l">
-        <p>Copyright© 2023 JTTstore@gmail.com</p>
-        <p>All Rights Reserved.</p>
-        <p>Inspired by Mohammed Awad's Zattix Design.</p>
-        <p>Made by Lucas Delbel.</p>
-      </div>
-      <div class="footer_bottom_social jc-c">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-github-alt"></i></a>
-        <a href="#"><i class="fab fa-stack-overflow"></i></a>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>© 2024 JTT Store. All rights reserved.</p>
+      <div>
+        <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </footer>
-  </body>
+
+  <!-- Thank You Message -->
+  <div class="thank-you-msg" id="thankYouMessage">
+    <h3>Hurray! 🎉</h3>
+    <p id="savedMessage"></p>
+    <button onclick="closeThankYouMessage()" class="btn btn-danger">Close</button>
+  </div>
+
+  <script>
+    const products = [
+      // Clothing
+      { id: 1, name: "Workout T-Shirt", category: "Clothing", price: 500, img: "https://m.media-amazon.com/images/I/51fbEVpi+ZL._AC_UY1100_.jpg" },
+      { id: 2, name: "Yoga Pants", category: "Clothing", price: 700, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRW7PWXrkjQUdwAWrgyIF0uvDNOkwsUiYdYQ&s" },
+      { id: 3, name: "Gym Shorts", category: "Clothing", price: 400, img: "https://contents.mediadecathlon.com/p1851232/6a687d1a2d04e52d1e052be5f9dbb605/p1851232.jpg?format=auto&quality=70&f=2520x0" },
+      { id: 4, name: "Tank Top", category: "Clothing", price: 300, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0iVCCxCzzlGw9GcdRQXHYwBFAnAsW6En7mg&s" },
+      { id: 5, name: "Athletic Jacket", category: "Clothing", price: 1200, img: "https://www.master-athletics.com/cdn/shop/files/TOP016-N_800x.png?v=1699469490" },
+
+      // Equipment
+      { id: 6, name: "Dumbbell Set", category: "Equipment", price: 1500, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIOZR85ycl_jlQ-FqLIKwPoD4APXE9x2MZjw&s" },
+      { id: 7, name: "Yoga Mat", category: "Equipment", price: 800, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR668uJqASN0hTMyQBZNaFrofiavdQlvbWBFA&s" },
+      { id: 8, name: "Kettlebell", category: "Equipment", price: 900, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT69lwtP6qgP9PTmVYATbjsMMaguPqHQZjlg&s" },
+      { id: 9, name: "Skipping Rope", category: "Equipment", price: 300, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb8IfqensbmHFQK6oqcmm783dcDfTcKLqEhg&s" },
+      { id: 10, name: "Treadmill", category: "Equipment", price: 50000, img: "https://contents.mediadecathlon.com/p2544966/094c2f605cc932357646d771743046ef/p2544966.jpg?format=auto&quality=70&f=2520x0" },
+
+      // Supplements
+      { id: 11, name: "Protein Powder", category: "Supplements", price: 2000, img: "https://img2.hkrtcdn.com/28400/prd_2839991-MuscleBlaze-Beginners-Protein-Powder-4.4-lb-Chocolate_o.jpg" },
+      { id: 12, name: "Multivitamins", category: "Supplements", price: 1200, img: "https://inlifehealthcare.com/cdn/shop/files/inlife-multivitamin-and-mineral-for-men-60-tablets-vegetarian-supplement-200192.jpg?v=1720753900&width=800" },
+      { id: 13, name: "Creatine", category: "Supplements", price: 1500, img: "https://img8.hkrtcdn.com/35711/prd_3571057-MuscleBlaze-Creatine-Monohydrate-CreAMP-0.22-lb-Unflavoured_o.jpg" },
+      { id: 14, name: "Fish Oil", category: "Supplements", price: 1000, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzNpHHza_TrJ7a6BP3_rDaZJ0PrrsG-uDpjA&s" },
+      { id: 15, name: "BCAA", category: "Supplements", price: 1800, img: "https://cdn.staticans.com/image/tr:e-sharpen-01,h-1350,w-1080,cm-pad_resize/catalog/optimum/product/1145171/1142951_1.jpg" }
+    ];
+
+    const userPoints = 1000;
+    const pointValue = 0.1;
+
+    function loadProducts(filteredProducts = products) {
+      const productList = document.getElementById("productList");
+      productList.innerHTML = "";
+      filteredProducts.forEach((product) => {
+        const discount = userPoints * pointValue;
+        const priceAfterDiscount = product.price - discount;
+        const productCard = `
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <img src="${product.img}" class="card-img-top" alt="${product.name}">
+              <div class="card-body">
+                <h5 class="card-title">${product.name}</h5>
+                <p class="card-text">₹${product.price}</p>
+                <p class="card-text">Price After Discount: ₹${priceAfterDiscount.toFixed(2)}</p>
+                <button class="btn btn-primary" onclick="buyProduct('${product.name}', ${product.price})">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        `;
+        productList.innerHTML += productCard;
+      });
+    }
+
+    function buyProduct(productName, originalPrice) {
+      const discount = userPoints * pointValue;
+      const priceAfterDiscount = originalPrice - discount;
+      const savedAmount = originalPrice - priceAfterDiscount;
+      document.getElementById("savedMessage").textContent = `You've saved ₹${savedAmount.toFixed(2)}! Thank you for shopping with us!`;
+      document.getElementById("thankYouMessage").style.display = "block";
+    }
+
+    function closeThankYouMessage() {
+      document.getElementById("thankYouMessage").style.display = "none";
+    }
+
+    function applyFilters() {
+      const selectedCategories = [];
+      const selectedPrices = [];
+
+      document.querySelectorAll('input[type="checkbox"]:checked').forEach((checkbox) => {
+        if (checkbox.value) {
+          if (checkbox.id.includes("filter")) {
+            selectedCategories.push(checkbox.value);
+          } else if (checkbox.id.includes("price")) {
+            selectedPrices.push(checkbox.value);
+          }
+        }
+      });
+
+      let filteredProducts = products.filter((product) => {
+        let categoryMatch = selectedCategories.length === 0 || selectedCategories.includes(product.category);
+        let priceMatch = selectedPrices.length === 0;
+
+        if (selectedPrices.includes("1") && product.price >= 100 && product.price <= 500) priceMatch = true;
+        if (selectedPrices.includes("2") && product.price >= 501 && product.price <= 1000) priceMatch = true;
+        if (selectedPrices.includes("3") && product.price >= 1001 && product.price <= 50000) priceMatch = true;
+
+        return categoryMatch && priceMatch;
+      });
+
+      loadProducts(filteredProducts);
+    }
+
+    document.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+      checkbox.addEventListener("change", applyFilters);
+    });
+
+    loadProducts();
+  </script>
+</body>
 
 </html>

@@ -6,7 +6,30 @@ body {
 
 /*background  satarts here*/
 
+@media (max-width: 767px) {
+    .featurette-heading + a {
+        width: 100%; /* Make button full width on small screens */
+        text-align: center;
+    }
+}
 
+/* Ensure buttons stay within their containers */
+.featurette-heading + a {
+    display:inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #007bff; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.featurette-heading + a:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
 
 
 
